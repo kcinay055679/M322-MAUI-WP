@@ -1,0 +1,48 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:M322_WP"
+             x:Class="M322_WP.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="MyControlTemplate">
+                <StackLayout>
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <ImageButton
+                Source="nav_home.png"
+                HeightRequest="40"
+                HorizontalOptions="Center" 
+                            Clicked="navigateDashboard"
+               />
+
+                        <ImageButton
+                Source="nav_add.png"
+                HeightRequest="30"
+                HorizontalOptions="Center" 
+                            Clicked="navigateAdd"
+              />
+
+                        <Image
+                Source="wp_logo.png"
+                HeightRequest="80"
+                HorizontalOptions="Center"
+                />
+
+                        <ImageButton
+                Source="nav_settings.png"
+                HeightRequest="40"
+                HorizontalOptions="Center"
+                 Clicked="navigateSettings"/>
+                    </HorizontalStackLayout>
+                    <ContentPresenter />
+                    <!--<Label Text="Footer" FontSize="24" />-->
+                </StackLayout>
+            </ControlTemplate>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+
