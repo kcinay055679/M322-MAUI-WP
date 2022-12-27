@@ -32,9 +32,9 @@ public partial class App : Application
 
 
         MainPage = new AppShell();
-	}
 
-
+       
+    }
     private async void navigateDashboard(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("dashboard");
@@ -50,4 +50,7 @@ public partial class App : Application
     {
         await Shell.Current.GoToAsync("settings");
     }
+
+
+
 }

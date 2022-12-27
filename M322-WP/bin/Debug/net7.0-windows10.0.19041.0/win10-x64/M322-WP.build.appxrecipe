@@ -868,6 +868,12 @@
     <AppxPackagedFile Include="C:\Users\vmadmin\source\repos\M322-WP\M322-WP\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vmadmin\source\repos\M322-WP\M322-WP\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\homescreen1.scale-100.png">
+      <PackagePath>homescreen1.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vmadmin\source\repos\M322-WP\M322-WP\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\lockscreen1.scale-100.png">
+      <PackagePath>lockscreen1.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vmadmin\source\repos\M322-WP\M322-WP\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nav_add.scale-100.png">
       <PackagePath>nav_add.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -876,6 +882,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vmadmin\source\repos\M322-WP\M322-WP\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nav_settings.scale-100.png">
       <PackagePath>nav_settings.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vmadmin\source\repos\M322-WP\M322-WP\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\screen1.scale-100.png">
+      <PackagePath>screen1.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vmadmin\source\repos\M322-WP\M322-WP\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\screen2.scale-100.png">
+      <PackagePath>screen2.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\vmadmin\source\repos\M322-WP\M322-WP\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\screen3.scale-100.png">
+      <PackagePath>screen3.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\vmadmin\source\repos\M322-WP\M322-WP\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wp_logo.scale-100.png">
       <PackagePath>wp_logo.scale-100.png</PackagePath>

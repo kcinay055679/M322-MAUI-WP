@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = M322_WP.FormPage.xaml
 build_metadata.AdditionalFiles.TargetPath = FormPage.xaml
 build_metadata.AdditionalFiles.RelativePath = FormPage.xaml
 
+[C:/Users/vmadmin/source/repos/M322-WP/M322-WP/NavigationBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = M322_WP.NavigationBar.xaml
+build_metadata.AdditionalFiles.TargetPath = NavigationBar.xaml
+build_metadata.AdditionalFiles.RelativePath = NavigationBar.xaml
+
 [C:/Users/vmadmin/source/repos/M322-WP/M322-WP/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = M322_WP.Resources.Styles.Colors.xaml

@@ -12,6 +12,9 @@
     <MauiXaml Update="FormPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="NavigationBar.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Settings.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

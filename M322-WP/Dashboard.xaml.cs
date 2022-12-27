@@ -1,17 +1,12 @@
-using Microsoft.Maui.Controls;
+
+using M322_WP.Models;
 
 namespace M322_WP;
 
-public partial class Dashboard : ContentPage
-{
+public partial class Dashboard : ContentPage {
     public Dashboard()
     {
         InitializeComponent();
+        BindingContext = new DashboardViewModel();
     }
-
-    private async void navigateSettings(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("settings");
-    }
-
 }

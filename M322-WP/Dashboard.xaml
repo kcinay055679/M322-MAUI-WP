@@ -6,10 +6,84 @@
              ControlTemplate="{StaticResource MyControlTemplate}"
              >
 
+    <ListView x:Name="profileView" ItemsSource="{Binding Profiles}">
 
-    <Label Text="Dashboard">
-        
-    </Label>
-    
+        <ListView.ItemTemplate>
+
+            <DataTemplate>
+
+                <ViewCell>
+                    <StackLayout>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <BoxView Color="Purple"></BoxView>
+                            <Label
+                            HorizontalOptions="Center"
+                            Text="{Binding name}" 
+                            FontAttributes="Bold" 
+                        />
+                            <BoxView Color="Red" Grid.Row="1"></BoxView>
+                            <Image
+                            Grid.Row="1"
+                            Source="nav_settings.png"
+                            HeightRequest="30"
+                            HorizontalOptions="End"
+                            />
+
+                        </Grid>
+                        
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <BoxView Color="Orange"></BoxView>
+                            <Image 
+                                Margin="0, 20, 0, 20"
+                                Source="{Binding homeScreenPath}" 
+                                HorizontalOptions="Center"
+                                HeightRequest="120" >
+                            </Image>
+                            <Label
+                                Text="Yanicks Bildle"
+                                TextColor="Gray"
+                                HorizontalOptions="Center"
+                                VerticalOptions="End">
+                            </Label>
+
+                            <BoxView Color="Yellow" Grid.Column="1"></BoxView>
+                            <Image
+                                Margin="20, 0, 20, 0"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                Source="{Binding lockScreenPath}"
+                                HeightRequest="120" >
+                            </Image>
+                            <Label
+                                Grid.Column="1"
+                                Text="Yanicks Bildle"
+                                TextColor="Gray"
+                                HorizontalOptions="Center"
+                                VerticalOptions="End">
+                            </Label>
+                        </Grid>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+
+
+
 
 </ContentPage>
