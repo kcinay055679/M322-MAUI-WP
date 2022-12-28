@@ -4,6 +4,7 @@
              x:Class="M322_WP.Dashboard"
              Title="Dashboard"
              ControlTemplate="{StaticResource MyControlTemplate}"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
              >
 
     <ListView x:Name="profileView" ItemsSource="{Binding Profiles}">
@@ -37,7 +38,10 @@
                             />
 
                         </Grid>
-                        
+
+                        <Label Text="Test}" FontAttributes="Bold" TextColor="Teal" FontSize="50" />
+
+
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*" />

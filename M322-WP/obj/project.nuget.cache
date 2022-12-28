@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "W0BXVO8lqQzRS8QvKKgXBZ5ZZsnwZTsEfpN8MUBErF+JC2aYawc8AjyP0if/QotCcQ59jCnClzobhYH0J8DHLw==",
+  "dgSpecHash": "vcwfKxAisJRE36Fwwr1gZW3/8N02dr8Ne5htWx9zKcVwhjG2Ph4v8fTQYnop8dhgSoKWSkYyDOe1PBu7Zi/j/w==",
   "success": true,
   "projectFilePath": "C:\\Users\\yamin\\source\\repos\\depression\\M322-MAUI-WP\\M322-WP\\M322-WP.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,11 @@
     "C:\\Users\\yamin\\.nuget\\packages\\runtime.unix.system.private.uri\\4.3.0\\runtime.unix.system.private.uri.4.3.0.nupkg.sha512",
     "C:\\Users\\yamin\\.nuget\\packages\\runtime.win.system.diagnostics.debug\\4.3.0\\runtime.win.system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\yamin\\.nuget\\packages\\runtime.win7.system.private.uri\\4.3.0\\runtime.win7.system.private.uri.4.3.0.nupkg.sha512",
+    "C:\\Users\\yamin\\.nuget\\packages\\syncfusion.licensing\\20.4.0.40\\syncfusion.licensing.20.4.0.40.nupkg.sha512",
+    "C:\\Users\\yamin\\.nuget\\packages\\syncfusion.maui.core\\20.4.40\\syncfusion.maui.core.20.4.40.nupkg.sha512",
+    "C:\\Users\\yamin\\.nuget\\packages\\syncfusion.maui.datasource\\20.4.40\\syncfusion.maui.datasource.20.4.40.nupkg.sha512",
+    "C:\\Users\\yamin\\.nuget\\packages\\syncfusion.maui.gridcommon\\20.4.40\\syncfusion.maui.gridcommon.20.4.40.nupkg.sha512",
+    "C:\\Users\\yamin\\.nuget\\packages\\syncfusion.maui.listview\\20.4.40\\syncfusion.maui.listview.20.4.40.nupkg.sha512",
     "C:\\Users\\yamin\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\yamin\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\yamin\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",

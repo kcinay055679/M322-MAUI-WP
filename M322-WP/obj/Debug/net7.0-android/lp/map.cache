@@ -155,3 +155,7 @@ gifdecoder.aar
 glide.aar
 GoogleGson.aar
 Xamarin.Google.Crypto.Tink.Android.aar
+Syncfusion.Maui.Core.dll
+Syncfusion.Maui.DataSource.dll
+Syncfusion.Maui.GridCommon.dll
+Syncfusion.Maui.ListView.dll

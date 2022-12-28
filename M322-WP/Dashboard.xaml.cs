@@ -10,3 +10,4 @@ public partial class Dashboard : ContentPage {
         BindingContext = new DashboardViewModel();
     }
 }
+
