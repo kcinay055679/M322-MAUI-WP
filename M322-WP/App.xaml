@@ -6,7 +6,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ControlTemplate x:Key="MyControlTemplate">
-                <StackLayout>
+                <StackLayout BackgroundColor="White">
                     <HorizontalStackLayout HorizontalOptions="Center">
                         <ImageButton
                 Source="nav_home.png"

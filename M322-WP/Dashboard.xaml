@@ -22,13 +22,13 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <BoxView Color="Purple"></BoxView>
+                            <!--<BoxView Color="Purple"></BoxView>-->
                             <Label
                             HorizontalOptions="Center"
                             Text="{Binding name}" 
                             FontAttributes="Bold" 
                         />
-                            <BoxView Color="Red" Grid.Row="1"></BoxView>
+                            <!--<BoxView Color="Red" Grid.Row="1"></BoxView>-->
                             <Image
                             Grid.Row="1"
                             Source="nav_settings.png"
@@ -46,7 +46,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <BoxView Color="Orange"></BoxView>
+                            <!--<BoxView Color="Orange"></BoxView>-->
                             <Image 
                                 Margin="0, 20, 0, 20"
                                 Source="{Binding homeScreenPath}" 
@@ -60,7 +60,7 @@
                                 VerticalOptions="End">
                             </Label>
 
-                            <BoxView Color="Yellow" Grid.Column="1"></BoxView>
+                            <!--<BoxView Color="Yellow" Grid.Column="1"></BoxView>-->
                             <Image
                                 Margin="20, 0, 20, 0"
                                 Grid.Column="1"
