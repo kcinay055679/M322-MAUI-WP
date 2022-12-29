@@ -7,7 +7,9 @@
              xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
              >
 
-    <ListView x:Name="profileView" ItemsSource="{Binding Profiles}">
+    
+    
+    <ListView x:Name="profileView" ItemsSource="{Binding Profiles}" >
 
         <ListView.ItemTemplate>
 
@@ -18,29 +20,28 @@
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*" />
-                                <RowDefinition Height="*" />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             <!--<BoxView Color="Purple"></BoxView>-->
                             <Label
+                            TextColor="Black"
                             HorizontalOptions="Center"
-                            Text="{Binding name}" 
+                            Text="test" 
                             FontAttributes="Bold" 
+                            VerticalOptions="End"
                         />
                             <!--<BoxView Color="Red" Grid.Row="1"></BoxView>-->
-                            <Image
+                            <ImageButton
                             Grid.Row="1"
                             Source="nav_settings.png"
                             HeightRequest="30"
                             HorizontalOptions="End"
+                            Clicked="Edit_Profile"
                             />
 
                         </Grid>
-
-                        <Label Text="Test}" FontAttributes="Bold" TextColor="Teal" FontSize="50" />
-
 
                         <Grid>
                             <Grid.RowDefinitions>
