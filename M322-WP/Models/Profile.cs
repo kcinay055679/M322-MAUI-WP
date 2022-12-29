@@ -1,42 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace M322_WP.Models
+namespace M322_WP.Models;
+
+public class Profile : INotifyPropertyChanged
 {
-    public class Profile: INotifyPropertyChanged
+    public Profile(int id, string name, string lockScreenPath, string homeScreenPath)
     {
-        public string name { get; set; }
-        public string lockScreenPath { get; set; }
-        public string homeScreenPath { get; set; }
+        Id = id;
+        Name = id + ". " + name;
+        LockScreenPath = lockScreenPath;
+        HomeScreenPath = homeScreenPath;
+    }
 
-        public Profile(string name, string lockScreenPath, string homeScreenPath)
-        {
-            this.name = name;
-            this.lockScreenPath = lockScreenPath;
-            this.homeScreenPath = homeScreenPath;
-        }
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string LockScreenPath { get; set; }
+    public string HomeScreenPath { get; set; }
 
 
-		public event PropertyChangedEventHandler PropertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
-		protected virtual void OnPropertyChanged( [CallerMemberName] string propertyName = null )
-		{
-			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-		}
+    protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
 
-		protected bool SetProperty<T>( ref T storage, T value, [CallerMemberName] string propertyName = null )
-		{
-			if (Object.Equals(storage, value))
-				return false;
+    protected bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
+    {
+        if (Equals(storage, value))
+            return false;
 
-			storage = value;
-			OnPropertyChanged(propertyName);
-			return true;
-		}
-	}
+        storage = value;
+        OnPropertyChanged(propertyName);
+        return true;
+    }
 }

@@ -1,33 +1,31 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="M322_WP.NavigationBar"
              Title="NavigationBar">
     <HorizontalStackLayout HorizontalOptions="Center">
         <ImageButton
-                Source="nav_home.png"
-                HeightRequest="40"
-                HorizontalOptions="Center" 
-                            Clicked="navigateDashboard"
-               />
+            Source="nav_home.png"
+            HeightRequest="40"
+            HorizontalOptions="Center"
+            Clicked="navigateDashboard" />
 
         <ImageButton
-                Source="nav_add.png"
-                HeightRequest="30"
-                HorizontalOptions="Center" 
-                            Clicked="navigateAdd"
-              />
+            Source="nav_add.png"
+            HeightRequest="30"
+            HorizontalOptions="Center"
+            Clicked="navigateAdd" />
 
         <Image
-                Source="wp_logo.png"
-                HeightRequest="80"
-                HorizontalOptions="Center"
-                />
+            Source="wp_logo.png"
+            HeightRequest="80"
+            HorizontalOptions="Center" />
 
         <ImageButton
-                Source="nav_settings.png"
-                HeightRequest="40"
-                HorizontalOptions="Center"
-                 Clicked="navigateSettings"/>
+            Source="nav_settings.png"
+            HeightRequest="40"
+            HorizontalOptions="Center"
+            Clicked="navigateSettings" />
     </HorizontalStackLayout>
 </ContentPage>

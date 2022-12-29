@@ -1,32 +1,22 @@
-﻿using M322_WP.Models;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Windows.Networking.Sockets;
+﻿using System.Collections.ObjectModel;
+using M322_WP.Models;
 
-namespace M322_WP.Repositories
+namespace M322_WP.Repositories;
+
+internal class ProfileRepository
 {
-    class ProfileRepository
+    public ProfileRepository()
     {
-		public ObservableCollection<Profile> Profiles { get; set; } = new();
+        Profiles = GenerateDefaultValues(10);
+    }
 
-		public ProfileRepository()
-		{
-			Profiles = GernerateDefatultValues();
-		}
+    public ObservableCollection<Profile> Profiles { get; set; }
 
-		private ObservableCollection<Profile> GernerateDefatultValues()
-		{
-			ObservableCollection<Profile> _Profiles  = new();
-			for (int i = 0; i < 10; i++)
-			{
-				_Profiles.Add(new Profile($"name {i}", $"screen{i}.png", $"screen{i}.png"));
-			}
-			return _Profiles;
-
-	}
-}
+    private static ObservableCollection<Profile> GenerateDefaultValues(int amount)
+    {
+        ObservableCollection<Profile> profiles = new();
+        for (var i = 1; i <= amount; i++)
+            profiles.Add(new Profile(i, "Example name", $"screen{i}.png", $"screen{i}.png"));
+        return profiles;
+    }
 }

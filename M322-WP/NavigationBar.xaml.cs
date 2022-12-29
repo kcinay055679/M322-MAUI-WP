@@ -2,10 +2,10 @@ namespace M322_WP;
 
 public partial class NavigationBar : ContentPage
 {
-	public NavigationBar()
-	{
-		InitializeComponent();
-	}
+    public NavigationBar()
+    {
+        InitializeComponent();
+    }
 
     private async void navigateDashboard(object sender, EventArgs e)
     {

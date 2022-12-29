@@ -1,13 +1,76 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="M322_WP.FormPage"
              Title="FormPage"
              ControlTemplate="{StaticResource MyControlTemplate}">
-    <VerticalStackLayout>
-        <Label 
-            Text="Add"
-            VerticalOptions="Center" 
+
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Entry
+            Text="{Binding Name}"
+            x:Name="NameInput"
+            Placeholder="Enter a name"
+            TextChanged="NameInput_TextChanged"
+            TextColor="Black"
             HorizontalOptions="Center" />
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!--<BoxView Color="Orange"></BoxView>-->
+            <Image
+                Margin="0, 20, 0, 20"
+                Source="edit_wp.png"
+                HorizontalOptions="Center"
+                HeightRequest="300" />
+            <Label
+                Text="Lockscreen"
+                TextColor="Gray"
+                HorizontalOptions="Center"
+                VerticalOptions="End" />
+
+            <!--<BoxView Color="Yellow" Grid.Column="1"></BoxView>-->
+            <Image
+                Margin="20, 0, 20, 0"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                Source="add_wp.png"
+                HeightRequest="300" />
+            <Label
+                Grid.Column="1"
+                Text="Homescreen"
+                TextColor="Gray"
+                HorizontalOptions="Center"
+                VerticalOptions="End" />
+        </Grid>
+        <Grid VerticalOptions="End">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Grid.Column="0"
+                Text="Cancel"
+                BackgroundColor="White"
+                BorderColor="Gray"
+                TextColor="Gray" />
+
+            <Button
+                Grid.Column="1"
+                Text="Apply"
+                BackgroundColor="Aqua"
+                BorderColor="Gray"
+                TextColor="Gray" />
+
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>

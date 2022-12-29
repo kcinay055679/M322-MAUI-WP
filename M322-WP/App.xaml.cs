@@ -1,4 +1,7 @@
-﻿namespace M322_WP;
+﻿using M322_WP.Models;
+using Microsoft.Maui.Handlers;
+
+namespace M322_WP;
 
 #if WINDOWS
 using Microsoft.UI;
@@ -9,15 +12,15 @@ using Windows.Graphics;
 
 public partial class App : Application
 {
+    private const int WindowWidth = 390;
+    private const int WindowHeight = 844;
 
-    const int WindowWidth = 390;
-    const int WindowHeight = 844;
     public App()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
 
 
-        Microsoft.Maui.Handlers.WindowHandler.Mapper.AppendToMapping(nameof(IWindow), (handler, view) =>
+        WindowHandler.Mapper.AppendToMapping(nameof(IWindow), (handler, view) =>
         {
 #if WINDOWS
             var mauiWindow = handler.VirtualView;
@@ -32,9 +35,8 @@ public partial class App : Application
 
 
         MainPage = new AppShell();
-
-       
     }
+
     private async void navigateDashboard(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("dashboard");
@@ -42,7 +44,12 @@ public partial class App : Application
 
     private async void navigateAdd(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("form");
+        var profile = new Profile(0, "", "edit_wp.png", "add_wp.png");
+        var navigationParameter = new Dictionary<string, object>
+        {
+            {"profile", profile}
+        };
+        await Shell.Current.GoToAsync("form", navigationParameter);
     }
 
 
@@ -50,7 +57,4 @@ public partial class App : Application
     {
         await Shell.Current.GoToAsync("settings");
     }
-
-
-
 }
