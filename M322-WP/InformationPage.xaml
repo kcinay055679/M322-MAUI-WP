@@ -5,40 +5,95 @@
              x:Class="M322_WP.InformationPage"
              ControlTemplate="{StaticResource MyControlTemplate}">
  
-    <VerticalStackLayout Margin="50">
+    <VerticalStackLayout>
         <Label
-            Text="FAQ"
+            TextColor="Black"
+            Text="Info / FAQ"
             VerticalOptions="Center"
             HorizontalOptions="Center"
-            FontSize="40"/>
+            FontSize="50"/>
         <Label
-            Text="Hier könnte ihre Frage stehen."
+            TextColor="MidnightBlue"
+            Text="Hier könnte eine 1. Information stehen die sie interessieren könnte"
             VerticalOptions="Center"
             HorizontalOptions="Center"
-            FontSize="10"/>
+            FontSize="11"/>
         <Label
-            Text="Hier könnte ihre Antwort stehen"
+            TextColor="MidnightBlue"
+            Text="Hier könnte eine 2. Information stehen die sie interessieren könnte"
             VerticalOptions="Center"
             HorizontalOptions="Center"
-            FontSize="10"/>
+            FontSize="11"/>
         <Label
+            TextColor="Black"
+            Text="Hier könnte ihre 1. Frage stehen."
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="11"/>
+        <Label
+            TextColor="DarkRed"
+            Text="Hier könnte ihre 1. Antwort stehen"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="11"/>
+        <Label
+            TextColor="Black"
+            Text="Hier könnte ihre 2. Frage stehen."
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="11"/>
+        <Label
+            TextColor="DarkRed"
+            Text="Hier könnte ihre 2. Antwort stehen"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="11"/>
+        <Label
+            TextColor="Black"
+            Text="Hier könnte ihre 3. Frage stehen."
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="11"/>
+        <Label
+            TextColor="DarkRed"
+            Text="Hier könnte ihre 3. Antwort stehen"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="11"/>
+        <Label
+            TextColor="Black"
             Text="Input options"
             VerticalOptions="Center"
             HorizontalOptions="Center"
-            FontSize="40"/>
-        <Label Text="Radio button"/>
+            FontSize="30"/>
+        <Label 
+            TextColor="Black"
+            Text="Radio button"/>
         <RadioButton/>
-        <Label Text="Switch"/>
+        <Label 
+            TextColor="Black"
+            Text="Switch"/>
         <Switch/>
-        <Label Text="Checkbox"/>
+        <Label 
+            TextColor="Black" 
+            Text="Checkbox"/>
         <CheckBox/>
-        <Label Text="Slider"/>
-        <Slider/>
-        <Label Text="Date picker"/>
-        <DatePicker/>
-        <Button Text="Submit"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
+        <Label 
+            Text="Slider"
+            TextColor="Black"
+        />
+        <Slider RotationX="180"/>
+        <Label 
+            Text="Date picker"
+            TextColor="Black"
+            />
+        <DatePicker 
+            TextColor="Black" />
+        <Button 
+            Text="Submit"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="NavigateDashboard"
+            />
     </VerticalStackLayout>
-    
 </ContentPage>

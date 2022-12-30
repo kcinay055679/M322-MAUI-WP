@@ -13,7 +13,7 @@ using Windows.Graphics;
 public partial class App : Application
 {
     private const int WindowWidth = 390;
-    private const int WindowHeight = 735;
+    private const int WindowHeight = 750;
 
     public App()
     {

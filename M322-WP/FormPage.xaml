@@ -13,7 +13,6 @@
             Placeholder="Enter a name"
             TextChanged="NameInput_TextChanged"
             TextColor="Red"
-            MaxLength="25"
             HorizontalOptions="Center" />
         <Grid HorizontalOptions="Center" VerticalOptions="Center">
             <Grid.RowDefinitions>

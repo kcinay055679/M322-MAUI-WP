@@ -5,20 +5,46 @@
              x:Class="M322_WP.Settings"
              Title="Settings"
              ControlTemplate="{StaticResource MyControlTemplate}">
-    <ScrollView Margin="20">
+    <ScrollView Orientation="Vertical">
         <VerticalStackLayout>
             <ListView ItemsSource="{Binding SettingEntries}" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Label
-                                Text="That's a test"
-                                TextColor="Black" />
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label
+                                    TextColor="Black"
+                                    HorizontalOptions="Center"
+                                    FontSize="20"
+                                    Margin="0, 60, 0, 0"
+                                    Text="{Binding Name}"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="Start" />
+                                <Label
+                                    Grid.Column="1" TextColor="DarkBlue"
+                                    HorizontalOptions="Center"
+                                    Text="^"
+                                    Margin="0, 0, 20, 0"
+
+                                    Rotation="180"
+                                    FontSize="30"
+                                    FontAttributes="Bold"
+                                    VerticalOptions="End" />
+                            </Grid>
+                         
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
             <Button
+                Margin="60, 30, 60, 30"
                 BorderColor="Gray"
                 Text="Info / FAQ" 
                 Clicked="NavigateInfo"

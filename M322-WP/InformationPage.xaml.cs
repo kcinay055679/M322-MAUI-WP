@@ -12,4 +12,9 @@ public partial class InformationPage : ContentPage
     {
         InitializeComponent();
     }
+
+    private async void NavigateDashboard(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("dashboard");
+    }
 }

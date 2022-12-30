@@ -7,7 +7,7 @@ public class SettingsRepository
 {
     public SettingsRepository()
     {
-        SettingEntries = GenerateDefaultValues(10);
+        SettingEntries = GenerateDefaultValues(6);
     }
 
     public ObservableCollection<SettingEntry> SettingEntries { get; set; }

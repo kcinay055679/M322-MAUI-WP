@@ -7,7 +7,7 @@ public partial class Settings : ContentPage
     public Settings()
     {
         InitializeComponent();
-        BindingContext = new SettingsRepository().SettingEntries;
+        BindingContext = new SettingsRepository();
     }
     
     private async void NavigateInfo(object sender, EventArgs e)
