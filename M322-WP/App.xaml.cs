@@ -53,8 +53,13 @@ public partial class App : Application
     }
 
 
-    private async void navigateSettings(object sender, EventArgs e)
+    private async void NavigateSettings(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("settings");
+    }
+
+    private async void NavigateInfo(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("info");
     }
 }

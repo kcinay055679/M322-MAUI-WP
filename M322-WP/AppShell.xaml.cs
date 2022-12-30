@@ -8,5 +8,6 @@ public partial class AppShell : Shell
         Routing.RegisterRoute("dashboard", typeof(Dashboard));
         Routing.RegisterRoute("form", typeof(FormPage));
         Routing.RegisterRoute("settings", typeof(Settings));
+        Routing.RegisterRoute("info", typeof(InformationPage));
     }
 }

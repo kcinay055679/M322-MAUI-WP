@@ -5,10 +5,24 @@
              x:Class="M322_WP.Settings"
              Title="Settings"
              ControlTemplate="{StaticResource MyControlTemplate}">
-    <VerticalStackLayout>
-        <Label
-            Text="Settings"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView Margin="20">
+        <VerticalStackLayout>
+            <ListView ItemsSource="{Binding SettingEntries}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label
+                                Text="That's a test"
+                                TextColor="Black" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button
+                BorderColor="Gray"
+                Text="Info / FAQ" 
+                Clicked="NavigateInfo"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

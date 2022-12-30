@@ -20,16 +20,18 @@
                             HorizontalOptions="Center"
                             Clicked="navigateAdd" />
 
-                        <Image
+                        <ImageButton
                             Source="wp_logo.png"
                             HeightRequest="80"
-                            HorizontalOptions="Center" />
+                            HorizontalOptions="Center"
+                            Clicked="NavigateInfo"
+                            />
 
                         <ImageButton
                             Source="nav_settings.png"
                             HeightRequest="40"
                             HorizontalOptions="Center"
-                            Clicked="navigateSettings" />
+                            Clicked="NavigateSettings" />
                     </HorizontalStackLayout>
                     <ContentPresenter />
                     <!--<Label Text="Footer" FontSize="24" />-->

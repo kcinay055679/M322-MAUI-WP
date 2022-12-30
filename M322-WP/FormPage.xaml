@@ -72,7 +72,6 @@
                 BackgroundColor="Aqua"
                 BorderColor="Gray"
                 Clicked="Apply_OnClicked"
-                IsEnabled="{Binding isEnabled}"
                 TextColor="Gray" />
 
         </Grid>

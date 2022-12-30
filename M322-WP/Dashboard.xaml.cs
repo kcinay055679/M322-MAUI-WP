@@ -1,3 +1,4 @@
+using M322_WP.Models;
 using M322_WP.Repositories;
 using Microsoft.VisualBasic.CompilerServices;
 
@@ -17,16 +18,15 @@ public partial class Dashboard : ContentPage
         var listViewItem = (Grid) settings.Parent;
         var label = (Label) listViewItem.Children[0];
         var id = IntegerType.FromString(label.Text.Split(".")[0]);
-        var profile = (from thing in new ProfileRepository().Profiles
-            where thing.Id == id
-            select thing).SingleOrDefault();
-
-        // label.Text = profile?.HomeScreenPath;
-
+        var profile = (from profileObj in new ProfileRepository().Profiles
+            where profileObj.Id == id
+            select profileObj).SingleOrDefault();
+        
         var navigationParameter = new Dictionary<string, object>
         {
             {"Profile", profile}
         };
+        
         await Shell.Current.GoToAsync("form", navigationParameter);
     }
 }

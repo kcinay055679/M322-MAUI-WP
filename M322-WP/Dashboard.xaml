@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="M322_WP.Dashboard"
@@ -7,7 +6,7 @@
              ControlTemplate="{StaticResource MyControlTemplate}">
 
 
-    <ListView ItemsSource="{Binding Profiles}">
+    <ListView ItemsSource="{Binding Profiles}" >
         <ListView.ItemTemplate>
             <DataTemplate >
                 <ViewCell >
@@ -26,8 +25,9 @@
                                 FontAttributes="Bold"
                                 VerticalOptions="End" />
                             <ImageButton
-                                Source="nav_settings.png"
-                                HeightRequest="30"
+                                Source="edit_profile.png"
+                                HeightRequest="10"
+                                WidthRequest="10"
                                 HorizontalOptions="End"
                                 Clicked="Edit_Profile" />
                         </Grid>
