@@ -9,8 +9,8 @@
 
     <ListView ItemsSource="{Binding Profiles}">
         <ListView.ItemTemplate>
-            <DataTemplate>
-                <ViewCell>
+            <DataTemplate >
+                <ViewCell >
                     <StackLayout>
                         <Grid>
                             <Grid.RowDefinitions>
@@ -30,7 +30,6 @@
                                 HeightRequest="30"
                                 HorizontalOptions="End"
                                 Clicked="Edit_Profile" />
-
                         </Grid>
 
                         <Grid>
@@ -41,7 +40,7 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <!--<BoxView Color="Orange"></BoxView>-->
+                            
                             <Image
                                 Margin="0, 20, 0, 20"
                                 Source="{Binding HomeScreenPath}"
@@ -53,7 +52,6 @@
                                 HorizontalOptions="Center"
                                 VerticalOptions="End" />
 
-                            <!-- <BoxView Color="Yellow" Grid.Column="1"></BoxView> -->
                             <Image
                                 Margin="20, 0, 20, 0"
                                 Grid.Column="1"

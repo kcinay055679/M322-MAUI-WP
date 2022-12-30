@@ -25,7 +25,7 @@ public partial class Dashboard : ContentPage
 
         var navigationParameter = new Dictionary<string, object>
         {
-            {"profile", profile}
+            {"Profile", profile}
         };
         await Shell.Current.GoToAsync("form", navigationParameter);
     }

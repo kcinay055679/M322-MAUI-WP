@@ -12,7 +12,8 @@
             x:Name="NameInput"
             Placeholder="Enter a name"
             TextChanged="NameInput_TextChanged"
-            TextColor="Black"
+            TextColor="Red"
+            MaxLength="25"
             HorizontalOptions="Center" />
         <Grid HorizontalOptions="Center" VerticalOptions="Center">
             <Grid.RowDefinitions>
@@ -25,11 +26,11 @@
             <!--<BoxView Color="Orange"></BoxView>-->
             <Image
                 Margin="0, 20, 0, 20"
-                Source="edit_wp.png"
+                Source="{Binding LockScreenPath, FallbackValue='edit_wp.png'}"
                 HorizontalOptions="Center"
                 HeightRequest="300" />
             <Label
-                Text="Lockscreen"
+                Grid.Column="0" Text="Lockscreen"
                 TextColor="Gray"
                 HorizontalOptions="Center"
                 VerticalOptions="End" />
@@ -39,11 +40,11 @@
                 Margin="20, 0, 20, 0"
                 Grid.Column="1"
                 HorizontalOptions="Center"
-                Source="add_wp.png"
+                Source="{Binding HomeScreenPath, FallbackValue='add_wp.png'}"
                 HeightRequest="300" />
             <Label
                 Grid.Column="1"
-                Text="Homescreen"
+                Text="Home screen"
                 TextColor="Gray"
                 HorizontalOptions="Center"
                 VerticalOptions="End" />
@@ -62,6 +63,7 @@
                 Text="Cancel"
                 BackgroundColor="White"
                 BorderColor="Gray"
+                Clicked="Cancel_OnClicked"
                 TextColor="Gray" />
 
             <Button
@@ -69,6 +71,8 @@
                 Text="Apply"
                 BackgroundColor="Aqua"
                 BorderColor="Gray"
+                Clicked="Apply_OnClicked"
+                IsEnabled="{Binding isEnabled}"
                 TextColor="Gray" />
 
         </Grid>

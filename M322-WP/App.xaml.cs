@@ -13,7 +13,7 @@ using Windows.Graphics;
 public partial class App : Application
 {
     private const int WindowWidth = 390;
-    private const int WindowHeight = 844;
+    private const int WindowHeight = 735;
 
     public App()
     {
@@ -47,7 +47,7 @@ public partial class App : Application
         var profile = new Profile(0, "", "edit_wp.png", "add_wp.png");
         var navigationParameter = new Dictionary<string, object>
         {
-            {"profile", profile}
+            {"Profile", profile}
         };
         await Shell.Current.GoToAsync("form", navigationParameter);
     }
